@@ -1,27 +1,31 @@
 body {
     font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     position: relative;
-    max-width: 920px;
-    height: 100px;
+    width: 960px;
+    height: 150px;
     margin: 0 auto;
+    border-bottom: 2px solid gray;
 }
 
-.header_wrap {
+.vertical_alien {
+    margin: 10px 20px;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
 }
 
-.header_wrap img{
+#page_logo {
     height: 60px;
     width: 60px;
 }
 
-.maintitle {
+.page_title {
     display: inline-block;
     padding: 5px;
     margin: 0 10px;
@@ -55,16 +59,16 @@ header {
 
 #menu li a:link, a:visited, a:hover, a:active {
     color: #000000;
-  }
+}
 
 #menu li a:hover {
     border-bottom: solid 2px #4B1680;
 }
 
 #main h2.title {
-    width: min-content;
+    width: max-content;
     text-align: center;
-    margin: 0 auto;
+    margin: 32px auto;
     border-bottom: solid 2px #4B1680;
     font-size: 40px;
 }
@@ -75,7 +79,13 @@ header {
 }
 
 #about img {
-    width: 120px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+#about_detail {
+    padding: 10px;
+    width: auto;
 }
 
 #about h3 {
@@ -92,3 +102,56 @@ header {
     width: 960px;
     margin: 0 auto 50px auto;
 }
+
+#playground {
+    width: 960px;
+    margin: 0 auto 50px auto;
+}
+
+.grid {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.item {
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #4B1680;
+    text-align: center;
+}
+
+.item a {
+    display: block;
+    text-decoration: none;
+}
+
+.item a:link, a:visited, a:hover, a:active {
+    color: #000000;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item p {
+    text-align: center;
+}
+
+body,#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+

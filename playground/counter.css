@@ -1,0 +1,74 @@
+#counter_display {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.counter_button {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+#btn1 {
+    width: 0px;
+    border-color: #ece4f0;
+    border-style: solid;
+    border-width: 12px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+#btn2 {
+    width: 0px;
+    border-color: #ece4f0;
+    border-style: solid;
+    border-width: 12px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+#btn1:hover {
+    width: 0px;
+    border-color: #8e36b1;
+    border-style: solid;
+    border-width: 12px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+#btn2:hover {
+    width: 0px;
+    border-color: #8e36b1;
+    border-style: solid;
+    border-width: 12px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+#button_num {
+    text-align: center;
+}
+
+#counter_num {
+    font-size: 100px;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+#counter_text {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#counter_text_detail {
+    font-size: 18px;
+    text-align: center;
+}
